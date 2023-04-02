@@ -1,11 +1,13 @@
-from urllib import response
 import requests
-import json
-from pprint import pprint
-import creds
+from dotenv import main
+import os
+
+# load env vars, save api key value
+main.load_dotenv(".env")
+API_KEY = os.getenv('API_KEY')
 
 # header for api call
-hed = {'Authorization': 'Bearer ' + creds.api_key}
+hed = {'Authorization': 'Bearer ' + API_KEY}
 
 # uri for RESTful GET
 uri = 'https://app.helloretriever.com/api/v1/device_returns/'
