@@ -3,7 +3,7 @@
 ### Prerequisites
 * Python
 * Credentials ENV file
-* Install pip
+* Install pip Linux/macOS 'python -m ensurepip --upgrade', Windows 'C:> py -m ensurepip --upgrade'
 * Install requests `pip install requests`
 * Install dotenv `pip install python-dotenv`
 
